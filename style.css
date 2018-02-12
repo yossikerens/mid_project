@@ -1,3 +1,82 @@
-h1 {
-    color:red;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+  }
+
+.header {
+    border: 1px solid black;
+      width: 100%;
+      height: 100px;
+  }
+
+.footer {
+    border: 1px solid black;
+      width: 100%;
+      height: 40px;
+      position: fixed;
+      bottom: 0;
+  }
+
+main {
+    padding: 25px 0;
+}
+
+.row {
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 930px;
+  }
+  
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.column {
+    float: right;
+    border: 1px solid black;
+    margin: 0 8px;
+  }
+  
+.height-754 {
+    height: 674px;
+  }
+
+.height-400 {
+    height: 400px;
+  }
+
+.height-250 {
+    height: 250px;
+  }
+
+.width-300 {
+    width: 290px;
+  }
+
+#row1col1 {
+  background-image: url("pic/1908364606615453350.jpg");
+  height: 356px;
+  border-radius: 0 0 24px 0px;
+}
+
+#row1col2 {
+    background-image: url("pic/Picture-046410251500.jpg");
+    height: 356px;
+    border-radius: 0 0 24px 0px;
+}
+
+#row1col3 {
+    background-image: url("pic/פזקר_-291_354410564000.jpg");
+    height: 356px;
+    border-radius: 0 0 24px 0px;
+}
+
+#row2col1 {
+    background-image: url("pic/small_cube_bg.jpg");
+    height: 256px;
 }
