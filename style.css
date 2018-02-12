@@ -47,7 +47,7 @@ main {
   }
 
 .height-400 {
-    height: 400px;
+    height: 380px;
   }
 
 .height-250 {
@@ -76,7 +76,45 @@ main {
     border-radius: 0 0 24px 0px;
 }
 
+/*
 #row2col1 {
-    background-image: url("pic/small_cube_bg.jpg");
-    height: 256px;
+    background-image: url("pic/small_cube_bg.png");
+    height: 216px;
+    border-radius: 0 24px 0 0;
+    position: relative;
+}
+
+#row2col2 {
+    background-image: url("pic/small_cube_bg.png");
+    height: 216px;
+    border-radius: 0 24px 0 0;
+}
+
+#row2col3 {
+    background-image: url("pic/small_cube_bg.png");
+    height: 216px;
+    border-radius: 0 24px 0 0;
+}
+*/
+@font-face {
+ font-family: 'Arial Heb';
+ src: url('font/Alef-Bold.ttf') format('truetype');
+}
+
+h3 {
+    font-family: 'Arial Heb', Arial;
+    font-size: 16px;
+}
+
+#row2col1, #row2col2, #row2col3 {
+position: relative;
+float: right;
+width: 270px;
+padding: 0 24px;
+height: 216px;
+background-image: url("pic/small_cube_bg.png");
+}
+
+.height-250 .column {
+    padding: 20px;
 }
