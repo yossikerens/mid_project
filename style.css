@@ -9,7 +9,9 @@
 .header {
     border: 1px solid black;
       width: 100%;
-      height: 100px;
+      height: 105px;
+      background-image: url("pic/header_bg.png");
+      position: relative;
   }
 
 .footer {
@@ -21,7 +23,7 @@
   }
 
 main {
-    padding: 25px 0;
+    padding: 29px 10px;
 }
 
 .row {
@@ -39,7 +41,7 @@ main {
 .column {
     float: right;
     border: 1px solid black;
-    margin: 0 8px;
+    margin: 0 6px;
   }
   
 .height-754 {
@@ -58,63 +60,91 @@ main {
     width: 290px;
   }
 
+.height-250 .column {
+    padding: 20px;
+  }
+
+#row1col1, #row1col2, #row1col3 {
+    height: 354px;
+    border-radius: 0 0 22px 0px; 
+} 
+
 #row1col1 {
   background-image: url("pic/1908364606615453350.jpg");
-  height: 356px;
-  border-radius: 0 0 24px 0px;
 }
 
 #row1col2 {
     background-image: url("pic/Picture-046410251500.jpg");
-    height: 356px;
-    border-radius: 0 0 24px 0px;
 }
 
 #row1col3 {
     background-image: url("pic/פזקר_-291_354410564000.jpg");
-    height: 356px;
-    border-radius: 0 0 24px 0px;
-}
-
-/*
-#row2col1 {
-    background-image: url("pic/small_cube_bg.png");
-    height: 216px;
-    border-radius: 0 24px 0 0;
-    position: relative;
-}
-
-#row2col2 {
-    background-image: url("pic/small_cube_bg.png");
-    height: 216px;
-    border-radius: 0 24px 0 0;
-}
-
-#row2col3 {
-    background-image: url("pic/small_cube_bg.png");
-    height: 216px;
-    border-radius: 0 24px 0 0;
-}
-*/
-@font-face {
- font-family: 'Arial Heb';
- src: url('font/Alef-Bold.ttf') format('truetype');
-}
-
-h3 {
-    font-family: 'Arial Heb', Arial;
-    font-size: 16px;
 }
 
 #row2col1, #row2col2, #row2col3 {
-position: relative;
-float: right;
-width: 270px;
-padding: 0 24px;
-height: 216px;
-background-image: url("pic/small_cube_bg.png");
+    position: relative;
+    float: right;
+    width: 290px;
+    padding: 0 24px;
+    height: 216px;
+    background-image: url("pic/small_cube_bg.png");
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.height-250 .column {
-    padding: 20px;
+li {
+    float: right;
 }
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: right;
+    font-family: 'Arial (Hebrew)', Arial;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.referal{
+    position: absolute;
+    right: 402px;
+    top: 55px;
+}
+
