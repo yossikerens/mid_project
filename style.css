@@ -101,6 +101,21 @@ li {
     float: right;
 }
 
+li.sep {
+    width: 4px;
+    height: 21px;
+    margin: 14px 0px;
+    background-image: url("pic/menu_sep.png");
+}
+
+.home>img {
+    border: 1px solid black;
+    position: absolute;
+    bottom: 17px;
+    right:20px;
+    clip: rect(0px,30px,20px,20px);
+}
+
 li a, .dropbtn {
     display: inline-block;
     color: white;
@@ -147,4 +162,5 @@ li.dropdown {
     right: 402px;
     top: 55px;
 }
+
 
