@@ -38,11 +38,15 @@ main {
   }
 
 .column {
-    float: right;
-    border: 1px solid black;
-    margin: 0 6px;
+   float: right;
+   margin: 0 6px;
   }
-  
+
+.height-50 {
+    height: 25px;
+    padding-right: 685px;
+    padding-top: 20px;
+}
 .height-754 {
     height: 694px;
   }
@@ -98,6 +102,24 @@ ul {
 
 li {
     float: right;
+}
+
+.lang {
+    padding: 0 15px;
+    font-size: 12px;    
+}
+.search {
+    padding: 0;
+}
+
+.w3-input {
+    width: 130px;
+    height: 15px;
+}
+
+.search-wrapper{
+    background-image: url("pic/search_input.png");
+    margin: auto;
 }
 
 li.sep {
